@@ -1,7 +1,7 @@
 <div class="container__big-card">
     <div class="big-card__photo">
         <img 
-            src="https://repository-images.githubusercontent.com/314186076/79a18fff-1aeb-4a12-9340-db81b383b5e7" 
+            [src]="photoCover" 
             alt="" 
             srcset=""
             height="250px" 
@@ -9,12 +9,12 @@
     </div>
 
     <div class="big-card__title">
-        <h1><a href="">New Angular version just released!</a></h1>
+        <h1><a [routerLink]="['content', id]"> {{ cardTitle }} </a></h1>
     </div>
     <div class="big-card__description">
         <p>
-            <a href="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus.
+            <a [routerLink]="['content', id]">
+                {{ cardDescription }}
             </a>
         </p>
     </div>

@@ -2,14 +2,14 @@
     <div class="container__small-card-content">
         <div class="small-card__photo">
             <img 
-                src="https://t3.ftcdn.net/jpg/02/61/88/64/360_F_261886480_pDtporajyHlp3MEaPYGYDLfMU1O8o5NU.webp" 
+                [src]="photoCover" 
                 alt="" 
                 srcset=""
             >
         </div>
     
         <div class="small-card__title">
-            <h1><a href="">Is React better tha Angular?</a></h1>
+            <h1><a [routerLink]="['content', id]"> {{ cardTitle }}</a></h1>
         </div>
     </div>
     <div class="container__small-card_separator">
